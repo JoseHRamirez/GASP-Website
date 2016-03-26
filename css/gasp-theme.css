@@ -1,0 +1,424 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	text-rendering: optimizeLegibility;
+	height: 100%;
+	width: 100%;
+}
+/*  === === === home-page-ids === === === */
+/* header and nav animations */
+#home-header-tag {
+	max-height: 1080px;
+	position: relative;
+	padding: 0;
+	background-color: rgb(0, 0, 0);
+	overflow: hidden;
+}
+/* message of the day */
+#message-of-the-day {
+	position: absolute;
+	padding: 5px 10px;
+	right: 20%;
+	top: 35%;
+	color: rgb(255, 255, 255);
+	background-color: rgba(0, 0, 0, 0.53);
+}
+#message-of-the-day>h2 { margin: 0 0 5px 0; }
+/* main tag */
+#home-main-tag {}
+/* home main img container */
+#home-main-img-container { padding: 0; }
+#home-main-img-container>img {}
+/* navigation */
+#home-nav-tag {
+	-o-transition: all 0.8s ease;
+	-moz-transition: all 0.8s ease;
+	-webkit-transition: all 0.8s ease;
+	transition: all 0.8s ease;
+}
+#home-menu {}
+/* footer */
+#home-footer-tag {}
+/* === === === / === === === / === === === / === === === / === === === / === === === */
+
+/* === === === main-title === === === */
+.main-title {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 2em 0;
+	background-color: rgba(0, 0, 0, 0.32);
+	text-align: center;
+	color: rgb(255, 255, 255);
+}
+.main-title > h1 { margin: 0; }
+/* === === === / === === === / === === === / === === === / === === === / === === === */
+
+/* === === === navigation === === === */
+.navbar-scroll {
+	width: 100%;
+	z-index: 10;
+}
+.gasp-navigation {
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+}
+.gasp-navigation .navbar-nav > .active {
+	color: rgb(255, 255, 255);
+	background-color: rgb(2, 64, 104);
+}
+.gasp-navigation .navbar-nav > .active > a, .gasp-navigation .navbar-nav > .active > a:hover {
+	color: inherit;
+	background-color: inherit;
+}
+.gasp-navigation .navbar-nav > li {
+	color: rgb(255, 255, 255);
+	transition: all 0.5s ease;
+}
+.gasp-navigation .navbar-nav > li:hover {
+	background-color: rgb(2, 64, 104);
+}
+.gasp-navigation .navbar-nav > li:focus {
+	color: rgb(255, 255, 255);
+	background-color: rgb(2, 64, 104);
+}
+.gasp-navigation .navbar-nav > li > a {
+	font-weight: normal;
+	border: 4px solid transparent;
+	color: rgb(255, 255, 255);
+}
+.gasp-navigation .navbar-nav > li > a:hover { color: inherit; }
+.gasp-navigation .navbar-nav > li > a:focus { color: inherit; }
+.gasp-navigation .navbar-toggle {
+	background-color: rgb(255, 255, 255);
+	border: none;
+}
+.gasp-navigation .navbar-toggle:hover {
+	background-color: rgb(16, 141, 162);
+	color: rgb(255, 255, 255);
+}
+.gasp-navigation .navbar-toggle:focus {
+	background-color: rgb(255, 255, 255);
+	color: rgb(46, 46, 46);
+}
+/*Dropdowns*/
+.navbar-default .navbar-nav > .open > a {
+	color: rgb(255, 255, 255);
+	background-color: rgb(2, 85, 138);
+	border-color: rgb(2, 85, 138);
+}
+.navbar-default .navbar-nav > .open > a:hover {
+	color: rgb(255, 255, 255);
+	background-color: rgb(2, 64, 104);
+	border-color: rgb(2, 64, 104);
+}
+.navbar-default .navbar-nav > .open > a:focus {
+	color: rgb(255, 255, 255);
+	background-color: rgb(2, 64, 104);
+	border-color: rgb(2, 64, 104);
+}
+/* nav 2 */
+.navbar-scrolled {
+	-webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.30);
+	-moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.30);
+	-ms-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.30);
+	-o-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.30);
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.30);
+	border: none;
+	background-color: rgb(2, 85, 138);
+}
+/* === === === / === === === / === === === / === === === / === === === / === === === */
+
+
+/* === === === structure cards === === === */
+/*employee highlight*/
+section[title="Quienes somos"] {
+	background-color: rgb(12, 100, 156);
+	padding: 2em 0;
+}
+.employee-spotlight {
+	text-align: center;
+	color: rgb(255, 255, 255);
+}
+.employee-spotlight > img {
+	height: 50%;
+	width: 50%;
+}
+.employee-spotlight > h5 { font-weight: 400; }
+.employee-spotlight > h6 { font-style: italic; }
+.employee-spotlight > p::before { content: '“'; }
+.employee-spotlight > p::after { content: '”'; }
+/* === === === / === === === / === === === / === === === / === === === / === === === */
+
+/*=== === === spacer-msg === === === */
+.spacer-msg {
+	padding: 1.5em 0;
+	color: rgb(255, 255, 255);
+	background-color: rgb(64, 64, 64);
+	text-align: center;
+}
+.spacer-msg > p {
+	display: inline-block;
+	max-width: 80%;
+	color: rgb(255, 255, 255);
+	text-align: justify;
+	font-size: 1.3em;
+	font-style: italic;
+}
+.spacer-msg > i {
+	display: inline-block;
+	color: rgb(255, 255, 255);
+	font-size: 1.2em;
+}
+/* === === === / === === === / === === === / === === === / === === === / === === === */
+
+/* === === === Main Services === === === */
+.services-container {}
+.services-container > .services-row { background-color: rgb(240, 240, 240); }
+.service-card-big {
+	position: relative;
+	min-height: 500px;
+	max-height: 600px;
+	overflow: hidden;
+	color: rgb(255, 255, 255);
+}
+.service-card-big > .service-card-dec {}
+.service-card-big > a > .service-card-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 80%;
+	padding: 1em;
+	margin: auto;
+	color: rgb(49, 49, 49);
+	background-color: rgb(251, 192, 45);
+	z-index: 2;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.service-card-big > a > .service-card-content > h2 {
+	text-align: center;
+	margin-top: 0;
+}
+.service-card-big > a > .service-card-content > p { text-align: justify; }
+.service-card-big > img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 1;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+/* === === === / === === === / === === === / === === === / === === === / === === === */
+
+/* === === === our clients section === === === */
+.clients-container { background: rgb(255, 255, 255); }
+.clients-title { background-color: rgb(46, 46, 46); }
+.clients-title > h2 {
+	margin: 0;
+	padding: 0.5em 0 0.5em 1em;
+	color: rgb(255, 255, 255);
+}
+/* === === === / === === === / === === === / === === === / === === === / === === === */
+
+/* === === === About us === === === */
+.about-us {
+	padding-bottom: 1.5em;
+	background-color: rgb(240, 240, 240);
+}
+/* === === === / === === === / === === === / === === === / === === === / === === === */
+
+/* === === === About us === === === */
+.contact {
+	color: white;
+	background-color: #024272;
+}
+
+/* === === === footer === === === */
+.footer-tag {
+	padding-top: 1.5em;
+	color: rgb(255, 255, 255);
+	background-color: rgb(27, 27, 27);
+}
+.social-space {
+	padding: 1.5em 0;
+	background-color: rgb(64, 64, 64);
+	color: rgb(255, 255, 255);
+}
+.social-space > h5 {
+	margin-top: 0;
+	text-align: center;
+	font-size: 18px;
+}
+.social-space > .facebook-section { text-align: center; }
+.social-space > .facebook-section > .social-icons {
+	display: block;
+	width: 300px;
+	margin-top: 1em;
+	margin-right: auto;
+	margin-left: auto;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+}
+.social-space > .facebook-section > .social-icons > ul {
+	display: inline-block;
+	height: inherit;
+	margin: 0 1em 0 1em;
+	padding: 0;
+	list-style: none;
+	overflow-y: hidden;
+}
+.social-space > .facebook-section > .social-icons > ul > li {
+	display: inline-block;
+	margin-left: 1em;
+	font-size: 2em;
+	color: rgb(2, 85, 138);
+	overflow: visible;
+	transition: all 0.5s ease;
+}
+.social-space > .facebook-section > .social-icons > ul > li:first-child { margin-left: 0; }
+.social-space > .facebook-section > .social-icons > ul > li:hover { color: rgb(251, 192, 45); }
+.social-space > .facebook-section > .social-icons > ul > li > a { color: inherit; }
+.social-space > .facebook-section .fb-page {}
+.footer-tag > .row {}
+.footer-tag > .row > .footer-sitemap {}
+.footer-tag > .row > .footer-sitemap > h6 {
+	margin-top: 0;
+	margin-bottom: 0.5em;
+}
+.footer-tag > .row > .footer-sitemap > .quick-links {
+	list-style: none;
+	padding-left: 1em;
+}
+.footer-tag > .row > .footer-sitemap > .quick-links > li {}
+.footer-tag > .row > .footer-sitemap > .quick-links > li > a {}
+.footer-tag > .row > .footer-middle-content {}
+.footer-tag > .row > .footer-aditional-info {}
+.copyright {
+	margin: 0;
+	padding-bottom: 0.5em;
+	text-align: center;
+	font-style: italic;
+}
+/* === === === / === === === / === === === / === === === / === === === / === === === */
+
+/* === === === Servicios page === === === */
+/* header-tag */
+#servicios-header-tag {
+	position: relative;
+}
+.servicios-header {
+	height: 187px;
+	background-color: rgb(2, 85, 138);
+}
+.servicios-header > h1 {
+	position: absolute;
+	top: calc(50% - 59px);
+	display: inline-block;
+	width: 100%;
+	margin: 0;
+	text-align: center;
+	color: rgb(255, 255, 255);
+}
+/* nav-tag */
+#servicios-nav-tag { border-top: 1px solid rgba(255, 255, 255, 0.35); }
+/* tables */
+.table-hover > tbody > tr:hover {
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 69, 111);
+}
+/* === === === / === === === / === === === / === === === / === === === / === === === */
+
+/* === === === Servicios page === === === */
+section[title="Contáctenos"] {
+	background-color: rgb(6, 80, 128);
+}
+/* === === === / === === === / === === === / === === === / === === === / === === === */
+
+/* === === === Titles === === === */
+.c-h3 {
+	margin: 0 0 0.5em;
+	padding: 0.2em 0 0 0.2em;
+	font-size: 1.6em;
+}
+/* === === === / === === === / === === === / === === === / === === === / === === === */
+
+/* === === === media queries === === === */
+@media only screen and (max-width: 992px)  {}
+@media only screen and (max-width: 768px)  {
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+		color: rgb(255, 255, 255);
+	}
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+		color: rgb(255, 255, 255);
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+}
+@media only screen and (max-width: 480px) {
+	.main-title {
+		padding: 0.2em 0;
+	}
+	.main-title > h1 {
+		margin: 0;
+		font-size: 2em;
+	}
+}
+/* === === === / === === === / === === === / === === === / === === === / === === === */
+
+/* === === === colors === === === */
+.primary-color{
+	background-color: rgb(2, 85, 138);
+	color: rgb(255, 255, 255);
+}
+.primary-color-bg {
+	background-color: rgb(2, 85, 138);
+}
+.color-default {
+	color: black;
+	background-color: rgb(255, 255, 255);
+}
+.text-color-dark {
+	color: rgb(46, 46, 46);
+}
+.interaction-color {
+	color: rgb(46, 46, 46);
+	background: rgb(251, 192, 45);
+}
+/* === === === / === === === / === === === / === === === / === === === / === === === */
+
+/* === === === Quick Utilities === === === */
+.free-height {
+	height: auto !important;
+}
+.locked-height {}
+.position-absolute {
+	position: absolute;
+}
+/* === === === / === === === / === === === / === === === / === === === / === === === */
+
+/* === === === Overwrites === === === */
+.navbar-absolute {
+	position: absolute;
+	right: 0; bottom: 0; left: 0;
+	margin: 0;
+}
+.position-static { position: static !important; }
+.service-icon.font-up {
+	text-align: center;
+	font-size: 10em;
+	color: rgb(255, 255, 255);
+}
+.navbar-fixed-top {
+	position: fixed;
+	top: 0; bottom: initial;
+}

@@ -1,0 +1,332 @@
+@charset "utf-8";
+/*CSS document*/
+
+/*  === === === === Nem Card v0.5 === === === ===  */
+.card-link, .card-link:hover { 
+	color: unset;
+}
+.nem-card {
+	position: relative;
+	display: inline-block;
+	min-height: 50px;
+	max-height: 600px;
+	width: 100%;
+	margin-bottom: 0.5em;
+	border-top-right-radius: 3px; 
+	border-top-left-radius: 3px;
+	background-color: white;
+	box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.09);
+	overflow: hidden;
+}
+.nem-card > .card-link {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 11;
+}
+/* card image */
+.nem-card > .card-link {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+}
+.nem-card > .card-image {
+	position: relative;
+	height: 225px;
+	overflow: hidden;
+}
+/* img */
+.nem-card > .card-image > img {
+	position: absolute;
+	left: 50%; top: 50%;
+	width: 120%;
+	transform: translate( -50%, -50%);
+}
+/* card icon */
+.nem-card > .card-image > .card-icon {
+	position: absolute;
+	top: 0.3em; left: 0.3em;
+	font-size: 2em;
+	text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.49);
+	opacity: 0.8;
+	color: white; /* 'config' */
+	z-index: 10;
+	-webkit-transition: all 0.5s cubic-bezier(.12, .68, .53, .95);
+	-moz-transition: all 0.5s cubic-bezier(.12, .68, .53, .95);
+	-o-transition: all 0.5s cubic-bezier(.12, .68, .53, .95);
+	transition: all 0.5s cubic-bezier(.12, .68, .53, .95);
+}
+.nem-card > .card-image > .card-icon-hover {
+	transform: translate(-50%, -50%);
+	top: 50%; left: 50%;
+	opacity: 1;
+	font-size: 7em;
+}
+/* card mask */
+.nem-card > .card-image > .card-mask {
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+	transition: all 0.5s ease;
+}
+.nem-card > .card-image > .card-mask-hover {
+	opacity: 0.6;
+	background-color: rgb(2, 85, 138); /* 'config' */
+}
+/* card content */
+.nem-card > .card-content {
+	min-height: 125px;
+	padding: 0 0.4em;
+	color: rgb(46, 46, 46);
+	overflow: hidden;
+}
+.nem-card > .card-content > h2 {
+	margin: 0 0 0.2em;
+	padding-top: 0.2em;
+	padding-bottom: 0.3em;
+	border-bottom: 3px solid rgb(251, 192, 45); /* 'config' */
+	font-size: 1.3em;
+	-webkit-transition: all 0.6s ease;
+	-moz-transition: all 0.6s ease;
+	-o-transition: all 0.6s ease;
+	transition: all 0.6s ease;
+}
+.nem-card > .card-content > h2:hover {
+	color: rgb(2, 85, 138); /* 'config' */
+	border-color: rgb(2, 85, 138); /* 'config' */
+}
+.nem-card > .card-content > p { text-align: justify; }
+
+/*  === === === === *** === === === ===  */
+
+/*  === === === === Swipe button === === === ===  */
+.button-link, .button-link:hover {
+	color: unset;
+}
+.swipe-button {
+	position: relative;
+	float: right; /* 'config' */
+	height: 45px;
+	width: 100%;
+	margin-bottom: 16px;
+	padding: 0;
+	border: none;
+	box-shadow: 0 4px 0 rgb(2, 55, 89); /* 'config' */
+	font-size: 1.6em;
+	color: white; /* 'config' */
+	background-color: rgb(2, 85, 138); /* 'config' */
+	overflow: hidden;
+	-webkit-transition: all 0.8s cubic-bezier(.1, .72, .16, .91);
+	-moz-transition: all 0.8s cubic-bezier(.1, .72, .16, .91);
+	-o-transition: all 0.8s cubic-bezier(.1, .72, .16, .91);
+	transition: all 0.8s cubic-bezier(.1, .72, .16, .91);
+}
+.swipe-button:hover {
+	box-shadow: 0 1px 0 rgb(2, 55, 89);
+}
+.swipe-button > .button-link {
+	position: absolute;
+	height: inherit;
+	width: 100%;
+	top: 0;
+	right: 0;
+	z-index: 10;
+}
+.swipe-button > .button-text {
+	position: relative;
+	height: inherit;
+	width: 100%;
+	text-align: center;
+	text-transform: capitalize;
+	font-size: inherit; /* 'config' */
+	-webkit-transition: all 0.7s cubic-bezier(.8, -0.3, .1, 1.4);
+	-moz-transition: all 0.7s cubic-bezier(.8, -0.3, .1, 1.4);
+	-o-transition: all 0.7s cubic-bezier(.8, -0.3, .1, 1.4);
+	transition: all 0.7s cubic-bezier(.8, -0.3, .1, 1.4);
+}
+.swipe-button > .button-text > p {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%; left: 50%;
+	width: 100%;
+	margin: 0;
+	font-size: inherit;
+}
+.swipe-button > .button-icon {
+	position: relative;
+	height: inherit;
+	width: 100%;
+	text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.19);
+	font-size: inherit;
+}
+.swipe-button > .button-icon > i {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%; left: 50%;
+	font-size: inherit;
+}
+.swipe-button > .button-text-hover {
+	margin-top: -45px;
+}
+/*  === === === === *** === === === ===  */
+/*  === === === === Apollo section === === === ===  */
+.apollo-section { margin-top: 0; }
+.apollo-section > .apollo-title {
+	background: rgb(67, 144, 38);
+	padding: 0;
+	border-bottom: solid 3px rgb(25, 92, 0);
+}
+.apollo-section > .apollo-title > .apollo-title-inner > h2 {
+	color: white;
+	margin: 0.3em 0;
+	padding: 0;
+}
+.apollo-section > .apollo-title > .apollo-title-inner > h2 > i {
+	font-size: 1.5em;
+	text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.09);
+	color: rgb(255, 255, 255);
+}
+.apollo-section > .apollo-content-top {
+	padding:1em;
+	background-color: rgb(240, 240, 240);
+}
+.apollo-section > .apollo-content-top > .general-desc {
+	padding: 0.5em;
+	box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.09);
+	background-color: white;
+}
+.apollo-section > .apollo-content-top > .general-desc > p { text-align: justify; }
+.apollo-section > .apollo-content-top > .info-table {}
+.apollo-section > .apollo-content-top > .info-table > table {}
+.apollo-section > .apollo-content-top > .info-table > table > thead > tr > th {
+	border: none
+}
+.apollo-section > .apollo-content-top > .info-table > table > tbody > tr:hover {
+	color: white;
+	background-color: rgb(2, 75, 100);
+}
+.apollo-section > .apollo-content-bottom {
+	padding: 1em;
+	background-color: rgb(0, 64, 93);
+}
+.apollo-section > .apollo-content-bottom > .general-charcs { position: relative; }
+.apollo-section > .apollo-content-bottom > .general-charcs > p {
+	color: white;
+	margin: 0;
+	font-size: 1.3em; 
+}
+.apollo-section > .apollo-content-bottom > .general-charcs > ul { 
+	list-style: none;
+	padding-left: 0.5em;
+	font-size: 1.2em;
+	line-height: 1.96;
+	color: white;
+}
+.apollo-section > .apollo-content-bottom > .general-charcs > ul > li {}
+.apollo-section > .apollo-content-bottom > .general-charcs > ul > li > i {
+	text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.09);
+	color: rgb(70, 166, 0);
+}
+.apollo-section > .apollo-content-bottom > .apollo-image {
+	position: relative;
+	height: 300px;
+	box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.09);
+	overflow: hidden;
+}
+.apollo-section > .apollo-content-bottom > .apollo-image > img {
+	position: absolute;
+	top: 50%; left: 50%;
+	transform: translate(-50%, -50%);
+}
+/*  === === === === *** === === === ===  */
+/*  === === === === Mini Card === === === ===  */
+.minicard {
+	position: relative;
+	margin-top: 1em;
+	padding: 1em 0 0;
+}
+.minicard:first-child {
+	margin-top: 0;
+}
+.minicard > .floatpoint {
+	position: absolute;
+	top: 0; left: 1em;
+	height: 2em;
+	overflow: hidden;
+	text-align: left;
+	/*color: white;*/
+	-webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+	-o-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+	background-color: rgb(251, 192, 45);
+}
+.minicard > .floatpoint > h6 {
+	margin: 0;
+	padding: 0.3em 3em;
+	font-size: 1.2em;
+}
+.minicard > .card-content {
+	margin: 0;
+	padding: 1.5em 1em 0.5em;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	text-align: justify;
+	background-color: #04648e;
+	-webkit-box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.09);
+	-moz-box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.09);
+	-o-box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.09);
+	box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.09);
+}
+.minicard > .card-content p {
+	font-size: 1.1em;
+	color: white;
+}
+.minicard > .card-content p:last-child {
+    margin-bottom: 0;
+}
+/*  === === === === *** === === === ===  */
+/*  === === === === Text Box === === === ===  */
+.text-box {
+	padding: 1em;
+	text-align: justify;
+	background-color: white;
+	-webkit-box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.09);
+	-moz-box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.09);
+	-o-box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.09);
+	box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.09);
+}
+.text-box > p {
+	font-size: 1.1em;
+}
+/*  === === === === *** === === === ===  */
+/*  === === === === title Box === === === ===  */
+.title-box {
+	background-color: rgb(2, 85, 138);
+	margin-bottom: 1em;
+}
+.title-box > h3 {
+	margin: 0;
+	padding: 0.5em 0 0.5em 1em;
+	font-size: 30px;
+	color: white;
+}
+/*  === === === === *** === === === ===  */
+/*  === === === === title Box === === === ===  */
+
+/*  === === === === *** === === === ===  */
+/* === === === === Media Queries === === === === */
+@media only screen and (max-width: 768px)  {
+    .minicard:first-child {
+        margin-top: 1em;
+    }
+}
+@media only screen and (max-width: 992px)  {
+    .nem-card > .card-image > img {
+    width: 150%;
+    }
+}
+/*  === === === === *** === === === ===  */
